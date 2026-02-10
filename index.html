@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGSU - TikTok Research Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .university-logo {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: #25F4EE;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #25F4EE;
+        }
+        
+        h3 {
+            color: #FE2C55;
+            margin: 1rem 0 0.5rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #25F4EE;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #1ac9c4;
+        }
+        
+        .btn-secondary {
+            background: #FE2C55;
+        }
+        
+        .btn-secondary:hover {
+            background: #e0244a;
+        }
+        
+        .research-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .detail-box {
+            background: #f1f8ff;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #25F4EE;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .compliance-badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Замените src на логотип вашего университета -->
+        <img src="https://via.placeholder.com/150x150/ffffff/25F4EE?text=UNI+LOGO" alt="University Logo" class="university-logo">
+        <h1>MGSU TikTok Research Project</h1>
+        <p class="subtitle">Academic Research Using TikTok Research API</p>
+        <div>
+            <span class="compliance-badge"><i class="fas fa-shield-alt"></i> Compliant with TikTok API Terms</span>
+            <span class="compliance-badge"><i class="fas fa-graduation-cap"></i> Academic Use Only</span>
+            <span class="compliance-badge"><i class="fas fa-lock"></i> Data Privacy Protected</span>
+        </div>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2><i class="fas fa-info-circle"></i> About This Project</h2>
+            <p>This is an official academic research initiative conducted by <strong>MGSU</strong>. Our project focuses on analyzing social media trends and patterns using TikTok's Research API for educational purposes.</p>
+            
+            <div class="research-details">
+                <div class="detail-box">
+                    <h3><i class="fas fa-bullseye"></i> Research Goals</h3>
+                    <p>Understanding content virality, engagement patterns, and platform dynamics in social media ecosystems.</p>
+                </div>
+                
+                <div class="detail-box">
+                    <h3><i class="fas fa-chart-line"></i> Methodology</h3>
+                    <p>Statistical analysis of aggregated, anonymized data obtained through official TikTok APIs.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2><i class="fas fa-database"></i> Data Usage & Privacy</h2>
+            <p>Our research strictly adheres to ethical guidelines and platform policies:</p>
+            
+            <ul>
+                <li><strong>Public Data Only:</strong> We analyze only publicly available content</li>
+                <li><strong>Anonymization:</strong> All data is aggregated and anonymized</li>
+                <li><strong>No Personal Information:</strong> We do not collect or store personal user data</li>
+                <li><strong>Limited Retention:</strong> Research data is retained only for academic purposes</li>
+                <li><strong>Non-Commercial:</strong> This research is not for commercial use</li>
+            </ul>
+            
+            <h3>Compliance Documentation:</h3>
+            <div class="links">
+                <a href="terms-of-service.html" class="btn">
+                    <i class="fas fa-file-contract"></i> Terms of Service
+                </a>
+                <a href="privacy-policy.html" class="btn btn-secondary">
+                    <i class="fas fa-user-shield"></i> Privacy Policy
+                </a>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2><i class="fas fa-code"></i> Technical Implementation</h2>
+            
+            <h3>API Usage:</h3>
+            <ul>
+                <li><strong>Official TikTok Research API</strong> for data access</li>
+                <li><strong>Read-only operations</strong> - no content modification</li>
+                <li><strong>Rate-limited requests</strong> respecting platform limits</li>
+                <li><strong>Secure university servers</strong> for data processing</li>
+            </ul>
+            
+            <h3>Research Outputs:</h3>
+            <ul>
+                <li>Statistical reports and visualizations</li>
+                <li>Academic papers and presentations</li>
+                <li>Course project deliverables</li>
+                <li>Conference submissions (if applicable)</li>
+            </ul>
+        </section>
+        
+        <section class="card">
+            <h2><i class="fas fa-envelope"></i> Contact Information</h2>
+            
+            <h3>Research Team:</h3>
+            <ul>
+                <li><strong>Primary Researcher:</strong> Nikita Bartashchuk</li>
+                <li><strong>University:</strong> MGSU</li>
+            </ul>            
+            <h3>For API-Related Inquiries:</h3>
+            <p>Please reference our TikTok Developer Application ID: <code>*Will be provided after approval*</code></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© <span id="current-year"></span> MGSU. All rights reserved.</p>
+        <p>This website and associated research tool are for academic purposes only.</p>
+        <p>
+            <a href="terms-of-service.html" style="color: #666; margin: 0 10px;">Terms of Service</a> | 
+            <a href="privacy-policy.html" style="color: #666; margin: 0 10px;">Privacy Policy</a> | 
+            <a href="https://developers.tiktok.com/" style="color: #666; margin: 0 10px;">TikTok Developer Portal</a>
+        </p>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
