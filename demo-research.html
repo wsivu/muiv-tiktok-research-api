@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TikTok Research Demo</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .demo { border: 2px solid #25F4EE; padding: 20px; margin: 20px; }
+    </style>
+</head>
+<body>
+    <h1>MUIV TikTok Research Tool</h1>
+    
+    <div class="demo">
+        <h2>Research Interface Demo</h2>
+        
+        <!-- Поле поиска -->
+        <input type="text" id="username" placeholder="Enter TikTok username" value="tiktok">
+        <button onclick="searchUser()">Analyze</button>
+        
+        <!-- Результаты -->
+        <div id="results" style="margin-top: 20px;">
+            <h3>Results will show here:</h3>
+            <p>- User profile (user.info.profile)</p>
+            <p>- Statistics (user.info.stats)</p>
+            <p>- Video list (video.list)</p>
+        </div>
+        
+        <script>
+        function searchUser() {
+            const username = document.getElementById('username').value;
+            document.getElementById('results').innerHTML = `
+                <h3>Demo Results for @${username}:</h3>
+                <p>✓ Profile data retrieved (user.info.profile)</p>
+                <p>✓ Statistics loaded (user.info.stats)</p>
+                <p>✓ Video list accessed (video.list)</p>
+                <p><em>Note: This is a demo interface. Real API calls would show actual data.</em></p>
+            `;
+        }
+        </script>
+    </div>
+    
+    <div style="margin-top: 30px;">
+        <h3>Academic Purpose Declaration:</h3>
+        <p>This tool is for university research only. Non-commercial use.</p>
+    </div>
+</body>
+</html>
